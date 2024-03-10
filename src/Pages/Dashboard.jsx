@@ -6,16 +6,16 @@ import Projects from "./Projects";
 import UpperCard from "./UpperCard";
 import NavBar from "./NavBar";
 import { Container } from "react-bootstrap";
+import Footer from "./Footer";
 
 export default function Dashboard() {
   return (
     <>
-      <NavBar />
-
       <UpperCard />
       <Skills />
       <Quallification />
       <Projects />
+      <Footer/>
     </>
   );
 }
