@@ -15,7 +15,7 @@ export default function Footer() {
               </svg>
             </a>
             <span class="mb-3 mb-md-0 text-body-secondary">
-              sahilcom2001@gmail.com
+              sahil1905050310026@gmail.com
             </span>
           </div>
 

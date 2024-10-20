@@ -3,14 +3,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const handleResumeClick = () => {
-    window.location.href = "https://drive.google.com/file/d/1F3sGsM8amdK6wXtsW10xOe-KBjFfdOtd/view?usp=sharing";
+    window.location.href = "https://drive.google.com/file/d/135lGbPcOMMUPHpwVA9zhknuietvUfYfT/view?usp=sharing";
   };
 
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "#0066ff" }}>
+    <Navbar expand="lg" style={{ backgroundColor: "#0066ff" }} fixed="top">
       <Container>
         <Navbar.Brand
           href="#home"
@@ -21,9 +22,30 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" style={{ color: "#ffffff", fontSize: 19 }}>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust if using fixed navbar
+            duration={500}
+            style={{ color: "#ffffff", fontSize: 19, cursor: "pointer", padding: '0.5rem' }}
+          >
               Home
-            </Nav.Link>
+          </Link>
+
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust if using fixed navbar
+            duration={500}
+            style={{ color: "#ffffff", fontSize: 19, cursor: "pointer", padding: '0.5rem' }}
+          >
+              Skills
+          </Link>
+
             <Nav.Link href="/contact" style={{ color: "#ffffff", fontSize: 19 }}>
               Contact
             </Nav.Link>
