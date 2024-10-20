@@ -7,6 +7,7 @@ import UpperCard from "./UpperCard";
 import NavBar from "./NavBar";
 import { Container } from "react-bootstrap";
 import Footer from "./Footer";
+import Certificate from "./Certificate";
 
 export default function Dashboard() {
   return (
@@ -26,6 +27,11 @@ export default function Dashboard() {
       <section id="project" className="section">
       <Projects />
       </section>
+
+      <section id="certificate" className="section">
+      <Certificate />
+      </section>
+
       <Footer/>
     </>
   );
