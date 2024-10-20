@@ -46,9 +46,32 @@ function NavBar() {
               Skills
           </Link>
 
-            <Nav.Link href="/contact" style={{ color: "#ffffff", fontSize: 19 }}>
+          <Link
+            activeClass="active"
+            to="education"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust if using fixed navbar
+            duration={500}
+            style={{ color: "#ffffff", fontSize: 19, cursor: "pointer", padding: '0.5rem' }}
+          >
+              Education
+          </Link>
+          <Link
+            activeClass="active"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust if using fixed navbar
+            duration={500}
+            style={{ color: "#ffffff", fontSize: 19, cursor: "pointer", padding: '0.5rem' }}
+          >
+              Project
+          </Link>
+
+            {/* <Nav.Link href="/contact" style={{ color: "#ffffff", fontSize: 19 }}>
               Contact
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
 

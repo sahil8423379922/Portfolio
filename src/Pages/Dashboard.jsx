@@ -19,7 +19,7 @@ export default function Dashboard() {
       <Skills />
       </section>
 
-      <section id="qualification" className="qualification">
+      <section id="education" className="qualification">
       <Quallification />
       </section>
 
